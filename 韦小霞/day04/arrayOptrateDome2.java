@@ -2,15 +2,15 @@
 //打印逆序数组【E,D,C,B,A]
 class arrayOptrateDome2
 {
-	static void printlnarray (String [] arr)
+	static void printlnarray (String [] oldarr)
 	{
 		String ret="[";
-		for (int index=0;index<arr.length ;index++ )
+		for (int index=0;index<oldarr.length ;index++ )
 		{
-			ret =ret+arr[index];
+			ret =ret+oldarr[index];
 
 			
-			if (index!=arr.length-1)
+			if (index!=oldarr.length-1)
 			{
 				ret=ret+",";
 			}
@@ -38,9 +38,10 @@ class arrayOptrateDome2
 		 {
 			
 		
-		String[] arr={"A","B","C","D","E"};
-		arrayOptrateDome2.printlnarray ( arr );
-		String[] newarr=arrayOptrateDome2.reverse[oldarr];
+		String[] oldarr={"A","B","C","D","E"};
+		arrayOptrateDome2.printlnarray ( oldarr );
+		
+		String[] newarr=arrayOptrateDome2.reverse(oldarr);
 		arrayOptrateDome2.printlnarray ( newarr );
 	}
 }
